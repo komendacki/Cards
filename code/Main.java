@@ -8,6 +8,7 @@ public class Main {
     public static void main(String ... args){
 
         Deck deck = new Deck();
+        System.out.println("List all cards in the new deck:" + System.lineSeparator());
         int cardCount = 0;
 
         try{
@@ -28,9 +29,11 @@ public class Main {
 
         deck.putAllCardsIntoDeck();
         deck.shuffle();
+        System.out.println("Shuffling the deck");
 
         cardCount = 0;
 
+        System.out.println("The deck afterr shuffling:" + System.lineSeparator());
         try{
             while (deck.hasCards()){
                 cardCount++;
